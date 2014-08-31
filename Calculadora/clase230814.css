@@ -1,0 +1,152 @@
+@font-face{
+	font-family: Opificio_neue-regular;
+	src: url(Opificio_neue-regular.ttf);
+}
+@font-face{
+    font-family: digital;
+    src: url(digital.ttf);
+}
+
+button:hover{
+    background-color: red;
+}
+
+.operaciones{
+    display:block;
+    border: 1px solid #32CD32;
+    width:63px;
+    height:45px;
+    color: white;
+    background:#32CD32;
+    text-align:center;
+    font-size: 23px;
+}
+.numero {
+    display:block;
+    border: 1px solid #395d9b;
+    width:63px;
+    height:45px;
+    color: white;
+    background:#2b7ab4;
+    text-align:center;
+    font-size: 23px;
+}
+#button-7{
+	position: absolute;
+	top: 120px;
+	left: 119px;
+}
+#button-8{
+	position: absolute;
+	top: 120px;
+	left: 192px;
+}
+#button-9{
+	position: absolute;
+	top: 120px;
+	left: 265px;
+}
+#button-6{
+	position: absolute;
+	top: 175px;
+	left: 265px;
+}
+
+#button-5{
+	position: absolute;
+	top: 175px;
+	left: 192px;
+}
+#button-4{
+	position: absolute;
+	top: 175px;
+	left: 119px;
+}
+#button-1{
+	position: absolute;
+	top: 230px;
+	left: 119px;
+}
+#button-2{
+	position: absolute;
+	top: 230px;
+	left: 192px;
+}
+#button-3{
+	position: absolute;
+	top: 230px;
+	left: 265px;
+}
+#botonCero{
+	position: absolute;
+	top: 285px;
+	left: 119px;
+}
+#botonIgual{
+	position: absolute;
+	top: 285px;
+	left: 265px;
+}
+#botonMenos{
+	position: absolute;
+	top: 120px;
+	left: 338px;
+}
+#botonMas{
+	position: absolute;
+	top: 175px;
+	left: 338px;
+}
+#botonPor{
+	position: absolute;
+	top: 230px;
+	left: 338px;
+	width:63px;
+}
+
+#botonClear{
+    color: white;
+    position: absolute;
+    top: 285px;
+    left: 192px;
+    width:63px;
+    display:block;
+    border: 1px solid #E63E00;
+    text-align:center;
+    height:45px;
+    background:#E63E00;
+    font-size: 23px;
+}
+#botonDiv{
+	position: absolute;
+	top: 285px;
+	left: 338px;
+}
+#carcasa{
+    position: relative;
+    top:15px;
+    left:100px;
+    width: 300px;
+    height: 320px;
+    border:solid #A9A9A9;
+}
+#casio{
+    position: absolute;
+    top: 15px;
+    left: 120px;
+    font-size: 23px;
+   color: #D3D3D3;
+}
+input[type="text"] {
+    text-align: right;
+	  position: absolute;
+      top: 60px;
+      left: 119px;
+      display: block;
+      width: 255px;
+      font-size: 25px;
+      box-shadow: none;
+      padding: 10px;
+      border: solid 4px #dcdcdc;
+      background: #D3D3D3;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="clase230814.css">
+	<link rel="stylesheet" type="text/css" href="fuentes.css">
+</head>
+<body>
+
+<div id="carcasa"></div>
+
+<input type="text" id="field1" value=""><br>
+	<p id="casio">CASIO</p>
+ 	 <button class="numero" id="button-1" value="1" onclick="Mostrarnum1()">1</button>
+	 <button class="numero" id="button-8" value="8" onclick="Mostrarnum8()">8</button>
+	 <button class="numero" id="button-7" value="7" onclick="Mostrarnum7()">7</button>
+	 <button class="numero" id="button-9" value="9" onclick="Mostrarnum9()">9</button>
+	 <button class="numero" id="button-6" value="6" onclick="Mostrarnum6()">6</button>
+	 <button class="numero" id="button-5" value="5" onclick="Mostrarnum5()">5</button>
+	 <button class="numero" id="button-4" value="4" onclick="Mostrarnum4()">4</button>
+	 <button class="numero" id="button-2" value="2" onclick="Mostrarnum2()">2</button>
+	 <button class="numero" id="button-3" value="3" onclick="Mostrarnum3()">3</button>
+	 <button class="numero" id="botonCero" value="0" onclick="Mostrarnum0()">0</button>
+	   	<button class="operaciones" id="botonIgual" onclick="igual()">=</button>
+	    <button class="operaciones" id="botonMenos" onclick="restar()">-</button>
+	    <button class="operaciones" id="botonMas" onclick="sumar()">+</button>
+  		<button class="operaciones" id="botonPor" onclick="multiplicar()">x</button>
+  		<button class="operaciones" id="botonDiv" onclick="dividir()">/</button>
+  		<button id ="botonClear" onclick="limpiar()">C</button>
+
+
+
+  	
+<script type="text/javascript"> 
+var a;
+var b;	
+var d;	
+	function Mostrarnum1(){
+	 var x = document.getElementById("button-1").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum2(){
+	 var x = document.getElementById("button-2").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum3(){
+	 var x = document.getElementById("button-3").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum4(){
+	 var x = document.getElementById("button-4").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum5(){
+	 var x = document.getElementById("button-5").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum6(){
+	 var x = document.getElementById("button-6").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum7(){
+	 var x = document.getElementById("button-7").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum8(){
+	 var x = document.getElementById("button-8").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum9(){
+	 var x = document.getElementById("button-9").value;
+	 document.getElementById("field1").value+=x;
+	}
+	function Mostrarnum0(){
+		var x = document.getElementById("botonCero").value;
+		document.getElementById("field1").value+=x;
+	}
+	function sumar(){
+		a = document.getElementById("field1").value;
+		document.getElementById("field1").value="";
+		d=0;
+	}
+	function restar(){
+		 a = document.getElementById("field1").value;
+		document.getElementById("field1").value="";
+		d=1;
+	}
+	function multiplicar(){
+		a = document.getElementById("field1").value;
+		document.getElementById("field1").value="";
+		d=2;
+	}
+	function dividir(){
+		a = document.getElementById("field1").value;
+		document.getElementById("field1").value="";
+		d=3;
+	}
+	function limpiar(){
+		a=0;
+		b=0;
+		d="";
+		document.getElementById("field1").value="";
+	}
+	function igual(){
+		 b = document.getElementById("field1").value;
+if(d==0){
+		 c = parseInt(b)+parseInt(a) 
+		document.getElementById("field1").value=c;
+	}
+	else if(d==1){
+		 c = parseInt(a)-parseInt(b) 
+		document.getElementById("field1").value=c;
+	}
+	else if(d==2){
+		c = parseInt(a)*parseInt(b) 
+		document.getElementById("field1").value=c;
+	}
+	else if(d==3){
+		if(b==0){
+			document.getElementById("field1").value="Error lince del himalaya";
+		}else{
+			c = parseInt(a)/parseInt(b) 
+		document.getElementById("field1").value=c;
+		}
+		
+	}
+}
+
+</script>
+</body>
+</html>
