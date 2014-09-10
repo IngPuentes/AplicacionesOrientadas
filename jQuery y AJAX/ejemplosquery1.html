@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>If you click on me, I will disappear.</p> 	<!-- Se crea un parrafo al cual se le agregará una accion con jquery-->
+</body>
+
+<script>
+	$(document).ready(function(){ //se crea una instancia que ejecuta la funcion solo cuando la pagina está "lista"
+		$("p").click(function(){ // enseguida se crea una accion para que a todas las etiquetas <p> se les asigne la siguiente funcion
+			$(this).hide(); //Enseguida se esconde el elemento dentro de la etiqueta seleccionada
+		});
+	});
+</script>
+</htm

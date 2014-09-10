@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$('#ejemplo2').hover(function () {  // como siempre se selecciona el objeto por su id y se agrega una funcion con la opcion hover, esta detecta que el puntero esté sobre el objeto
+				$(this).animate( { opacity: 0.3 }, 400) //animate modifica propiedades css de los objetos en este caso, modifica la opacidad y el tiempo que se demora en llegar al valor 
+			}, function () {
+				$(this).animate( { opacity: 1.0 }, 400)
+			});
+
+		});
+	</script>
+
+	<button id="ejemplo2">Hola</button>
+</body>
+</html>

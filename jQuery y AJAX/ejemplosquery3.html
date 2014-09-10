@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Primer script con jQuery</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#capa").mouseenter(function(evento){ //esta funcion verifica que el puntero del raton se encuentre dentro de la division
+		$("#mensaje").css("display", "block");//inmediatamente despues selecciona el "mensaje" por id y hace que lo muestre
+	});
+	$("#capa").mouseleave(function(evento){ // verifica que el puntero esté fuera de la division e inmediatamente despues oculta el "mensaje"
+		$("#mensaje").css("display", "none");
+	});
+})
+</script>
+</head>
+
+<body>
+
+<div id="capa" style="padding: 10px; background-color: #ff8800;">Pon el raton encima de esta capa</div> <!-- una division que inicialmente está visible-->
+<br>
+<div id="mensaje" style="display: none;">Has puesto el raton encima!! <br>(Ahora quitalo de la capa)</div><!--Una division que se encuentra oculta -->
+
+</body>
+</html>

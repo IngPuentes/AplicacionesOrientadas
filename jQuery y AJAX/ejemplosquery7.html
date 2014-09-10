@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+		*{font-family:sans-serif;}
+		button{padding:10px 20px;font-size:14px;position:relative;}
+	</style>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$('#ejemplo3').toggle(function () { // esta funcion es parecida al click(), al diferencia es que es un tipo de interruptor osea controla dos estados 
+
+				$(this).animate({left:'200px'}, 300) // solo modifica las propiedades de css, en este caso la posicion 
+
+			}, function () {
+
+				$(this).animate({left:'0px'}, 300)
+
+			});
+
+		});
+
+
+	</script>
+	<button id="ejemplo3">Hola</button>
+
+</body>
+</html>

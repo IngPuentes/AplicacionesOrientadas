@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn2").click(function(){
+				$("ol").append("<li>Appended item</li>"); //la funcion append() agrega elementos al final del objeto html en este caso una lista ordenada, por otro lado prepend() lo agrega al inicio
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<ol>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+	</ol>
+	<button id="btn2">Item agregado</button>
+</body>
+</html>

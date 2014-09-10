@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cambiar los estilos</title>
+	<link type="text/css" href="estilo1.css" rel="Stylesheet" id="linkestilo">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#enlaceestilo").click(function(e){
+			e.preventDefault();
+			$("#linkestilo").attr("href", "estilo2.css")
+		})
+	})
+	</script>
+</head>
+<body>
+	<h1>Intercambiador de la hoja de estilo enlazada</h1>
+    <a href="#" id="enlaceestilo">Cambia el estilo!</a>
+</body>
+</html>

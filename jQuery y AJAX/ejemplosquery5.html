@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Efectos con jQuery</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function(){ // como se puede ver en los ejemplos anteriores y este mismo, primero que todo se define el evento ready para que solo se puedan hacer "cosas" cuando la pagina esté cargada o lista
+			$("#ocultar").click(function(event){ //creacion del evento ocultar que detectara cuando den clic sobre el elemento con el id determinado
+				event.preventDefault(); //esta funcion es necesaria para que el metodo click() no realice navegacion que es lo predefinido
+				$("#capaefectos").hide("fast"); // se selecciona la division creada con el estilo y se oculta 
+			});
+
+			$("#mostrar").click(function(event){
+				event.preventDefault();
+				$("#capaefectos").show(); // a la funcion show se le pueden asignar un determinado tiempo para que aparezca el elemento, o que aparezca automaticamente ej: "slow"- "fast"-   200 (que se refiere a ms) 
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="capaefectos" style="background-color: #cc7700; color:fff; padding:10px;">
+		Esto es una capa que nos servira para hacer efectos!
+		<br>
+		<br>
+	
+	</div>
+
+	<p>
+		<a href="#" id="ocultar">Ocultar la capa</a> | 
+		<a href="#" id="mostrar">Mostrar la capa</a>  
+	</p>
+
+</body>
+</html>
